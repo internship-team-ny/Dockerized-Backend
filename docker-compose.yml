@@ -1,0 +1,10 @@
+version: '2'
+services:
+  redis:
+    image: "redis"
+    ports:
+     - "8080:6379"
+  back_end:
+    build: .
+    ports:
+     - "5000:3000"
