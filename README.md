@@ -81,7 +81,7 @@ redis.retrieveTweets('id', function(reply){
 
 ***** **Operations Module** *****:
 
-(every function takes an array of NLU analysis in JSON format as the paramater 'analysisList')
+(each function takes an array of NLU analysis in JSON format as the paramater 'analysisList')
 
 - overallSentiment(analysisList): Sum of sentiment score among all tweets analysis, each analysis has a sentiment score for each keyword and entity. Sentiment scores are between -1 and 1.
 
@@ -93,7 +93,7 @@ redis.retrieveTweets('id', function(reply){
 
 - topEntityTypes(analysisList, number): Same as topEntities but for entity types.
 
-- More functions to be added
+- More functions to be added. Also will be adjusted for the case of user-customized analysis features.
 
   ***An example utilizing Redis, NLU and Operations module***:
   
