@@ -93,7 +93,7 @@ redis.retrieveTweets('id', function(reply){
 
 - topEntityTypes(analysisList, number): Same as topEntities but for entity types.
 
-  ***An example utilizing Redis, NLU and Operations module:***:
+  ***An example utilizing Redis, NLU and Operations module***:
   
 ```
 var redis = require('redis_module.js');
@@ -112,7 +112,7 @@ redis.retrieveTweets('id', function(reply){
      console.log('Overall Sentiment: ' + operations.overallSentiment(reply)); //outputs overall sentiment (score from -1 to 1)
      console.log('Emotions: ' + operations.averageEmotions(reply)); //outputs each emotion followed by its score
      console.log('Top 3 Entities: ' + operations.topEntityTypes(reply,3)); //outputs 3 most common entities with frequencies 
-     console.log('Top 2 Keywords: ' + operations.topKeywords(reply,2)); //utputs 2 most common keywords with frequencies
+     console.log('Top 2 Keywords: ' + operations.topKeywords(reply,2)); //outputs 2 most common keywords with frequencies
      console.log('Top Entity Type: ' + operations.topEntityTypes(reply,1)); //outputs top entity type
 });
 
