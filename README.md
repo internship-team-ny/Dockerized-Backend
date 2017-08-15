@@ -11,15 +11,15 @@ Twitter module: retrieves tweets based on user's search query (Moaz Hamza)
 
 (All functions should be passed the request id as the first parameter.)
 
-(storeTweet) stores an entire tweet just as it is passed to it.
+- (storeTweet) stores an entire tweet just as it is passed to it.
 
-(storeTweets) stores a list of tweets. If only two parameters are passed, it stores the entire tweets. If a third parameter 'parameters' is passed, it stores only the given properties of a tweet, i.e. store a tweet's text and source only for example. The desired properties should be passed to the function as a list of strings with the name of the properties, e.g. ['text', 'source']. It thus can take two or three parameters.
+- (storeTweets) stores a list of tweets. If only two parameters are passed, it stores the entire tweets. If a third parameter 'parameters' is passed, it stores only the given properties of a tweet, i.e. store a tweet's text and source only for example. The desired properties should be passed to the function as a list of strings with the name of the properties, e.g. ['text', 'source']. It thus can take two or three parameters.
 
-(storeAnalysis) and (storeMultipleAnalysis) store a single analysis or multiple analysis respectively.
+- (storeAnalysis) and (storeMultipleAnalysis) store a single analysis or multiple analysis respectively.
 
-(retrieveTweets) and (retrieveAnalysis) functions each return a list of JSON objects each representing a tweet/analysis. They  need to be passed a callback function to handle the retrieved data.
+- (retrieveTweets) and (retrieveAnalysis) functions each return a list of JSON objects each representing a tweet/analysis. They  need to be passed a callback function to handle the retrieved data.
 
-(quit) ends the connection to the redis server.
+- (quit) ends the connection to the redis server.
 
 
 An example call for storing only the text, ID, and source of tweets and then retrieving them:
