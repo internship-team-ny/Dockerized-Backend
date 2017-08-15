@@ -93,6 +93,8 @@ redis.retrieveTweets('id', function(reply){
 
 - topEntityTypes(analysisList, number): Same as topEntities but for entity types.
 
+- More functions to be added
+
   ***An example utilizing Redis, NLU and Operations module***:
   
 ```
