@@ -44,14 +44,14 @@ module.exports = {
           else
            entities[String(entity.text)]+= entity.count;
          })
-       }
-       var array = [];
-       for(entity in entities)
-          array.push([entity,entities[entity]])
-       array.sort(function(a,b){return a[1] - b[1]});
-       array.reverse();
-       if(number > array.length) number = array.length;
-       return array.slice(0,number);
+     }
+     var array = [];
+     for(entity in entities)
+       array.push([entity,entities[entity]])
+     array.sort(function(a,b){return a[1] - b[1]});
+     array.reverse();
+     if(number > array.length) number = array.length;
+     return array.slice(0,number);
      },
 
 topKeywords: function(analysisList, number){
@@ -63,14 +63,14 @@ topKeywords: function(analysisList, number){
          else
           keywords[String(keyword.text)]++;
         })
-  }
-    var array = [];
-    for(keyword in keywords)
-      array.push([keyword,keywords[keyword]])
-    array.sort(function(a,b){return a[1] - b[1]});
-    array.reverse();
-    if(number > array.length) number = array.length;
-    return array.slice(0,number);
+   }
+   var array = [];
+   for(keyword in keywords)
+     array.push([keyword,keywords[keyword]])
+   array.sort(function(a,b){return a[1] - b[1]});
+   array.reverse();
+   if(number > array.length) number = array.length;
+   return array.slice(0,number);
  },
 
 topEntityTypes: function(analysisList, number){
@@ -82,14 +82,14 @@ topEntityTypes: function(analysisList, number){
          else
           types[String(entity.type)]+= entity.count;
         })
-      }
-      var array = [];
-      for(type in types)
-         array.push([type,types[type]])
-      array.sort(function(a,b){return a[1] - b[1]});
-      array.reverse();
-      if(number > array.length) number = array.length;
-      return array.slice(0,number);
+    }
+    var array = [];
+    for(type in types)
+      array.push([type,types[type]])
+    array.sort(function(a,b){return a[1] - b[1]});
+    array.reverse();
+    if(number > array.length) number = array.length;
+    return array.slice(0,number);
     }
 
 
